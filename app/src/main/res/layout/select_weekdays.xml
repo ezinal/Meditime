@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/card_margin"
+        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/weekdays_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In which days?"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_centerHorizontal="true"/>
+
+            <!--TODO : Add margin-->
+            <com.nex3z.togglebuttongroup.MultiSelectToggleGroup
+                android:id="@+id/group_weekdays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tbgChildSpacing="5dp"
+                android:layout_below="@id/weekdays_dialog"
+                android:layout_centerHorizontal="true">
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                    android:id="@+id/sun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="S"/>
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                    android:id="@+id/mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="M"/>
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                    android:id="@+id/tue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="T"/>
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                    android:id="@+id/wed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="W"/>
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                    android:id="@+id/thu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="T"/>
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                    android:id="@+id/fri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="F"/>
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                    android:id="@+id/sat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="S"/>
+
+            </com.nex3z.togglebuttongroup.MultiSelectToggleGroup>
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Meditime</string>
+    <string name="home">Home</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="nav_chart">Statistics</string>
+    <string name="monthly_pill_usage">Monthly Pill Usage</string>
+    <string name="image_of_crime">Image of crime</string>
+    <string name="crime_title_label">Title</string>
+    <string name="add_image">Add image</string>
+    <string name="crime_title_hint">Enter a title for crime</string>
+    <string name="crime_details_label">Details</string>
+    <string name="crime_solved_label">Solved</string>
+    <string name="crime_suspect_text">Choose a suspect</string>
+    <string name="crime_report_text">Send crime report</string>
+</resources>
